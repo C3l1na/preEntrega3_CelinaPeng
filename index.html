@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreaME-Shop</title>
+    <title>Taiwan-tuor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
@@ -20,7 +20,9 @@
                         DreaME
                         <img src="./images/sleep.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     </a>
-                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -30,7 +32,7 @@
                                 <a class="nav-link" href="./pages/quienes-somos.html">Quienes-somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                                <a class="nav-link" href="./pages/tuor-de-youtubers.html">Tuor de youtubers</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/ranking.html">Ranking</a>
@@ -40,9 +42,11 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    
                 </div>
             </nav>
         </div>
@@ -54,54 +58,94 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Dejate soñar</h1>
-                        <p>Con DreaME podés convertirte por un tiempo determinado en aquella persona que tanto deseaste</p>
-                        <a class="btn" href="#">prueba gratis</a>
+                        <p>Conociendo otro lugar fuera de lo cotidiano</p>
+                        <img src="./images/101.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>    
     </section>
 
+
     <section id="segundo">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3>Mas destacado del mes</h3>
+                    <h3> Mas destacado del mes</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img src="./images/musico.jpg" alt="musico">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/musico.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Musico</h5>
+                      <p class="card-text">This is a </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="./images/musico.jpg" alt="musico">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/millonaria.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Millonaria</h5>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <img src="./images/musico.jpg" alt="musico">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="./images/futbol.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Futbolista</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <ul>
-                        <li>Politica de privacidad</li>
-                        <li>Preguntas frecuentes</li>
-                        <li>Mapa del sitio</li>
-                    </ul>
+            <div class="row text-center" >
+               
+                <div class="col-md-4">
+                    <h4> Sobre nosotros</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda autem repellat inventore consequatur pariatur nam repudiandae! Fugiat quis facere, debitis magnam pariatur, quibusdam exercitationem laudantium iusto quod aspernatur consectetur amet.</p>
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/musico.jpg">
+                 
+                <div class="col-md-4">
+                    <h4> Mapa del sitio</h4>
+                    <img src="./images/taiwan-mapa.png" alt="">
                 </div>
-                <div class="col-md-3">
-                    <p>...</p>
+
+                <div class="col-md-4" id="redes">
+                    <h4> Redes sociales</h4>
+                    <a href="#">
+                        <img src="./images/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./images/instagram.png" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./images/twitter.png" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="./images/codigo-qr.png" alt="codigo-qr">
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <img src="./images/sleep.png">
-                    <p>Con DreaME podés convertirte por un tiempo determinado en aquella persona que tanto deseaste</p>
+            </div>
+            <div class="row" id="pie-pagina">
+                <div class="col-md-12 col-sm-6">
+                    <a href="#">Politica de privacidad</a>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Terminos y condiciones</a>
+                    <a href="#">Informacion del usuario</a>
+                    <a href="#">Contactanos</a>
+                    <p>2023--dreame A.R</p>
+                    
                 </div>
             </div>
         </div>

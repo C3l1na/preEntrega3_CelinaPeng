@@ -14,14 +14,18 @@ img{
 }
 
 .btn{
-    background-color: #f05f5c;
+    background-color: #f4c7ab;
     color: white;
     padding: 10px 25px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-header{
-    
+body{
+    background-color: #96BDC6;
+}
+
+header{   
+    background-color: #18605d;
 }
 
 header li {
@@ -31,17 +35,16 @@ header li {
 #intro h1{
     font-size: 55px;
     font-weight: bold;
-    line-height: 1.5;
 }
 
-#intro  {
-    height: 70%;
-    background-color: #96BDC6;
+#intro {
+    background-image: url(dream.jpg); /*no funciona*/
+    margin-top: 20px;
+    text-align: center;
 }
 
 #segundo{
     padding: 80px 0px;
-    background-color: aliceblue;
 }
 
 #segundo h3{
@@ -49,17 +52,65 @@ header li {
 }
 
 #segundo img{
-    box-shadow: 10px 10px coral;
+    box-shadow: 10px 10px;
 
 }
 footer{
     padding: 80px 0px;
-    background-color: #96BDC6;
+    background-color: #18605d;
 }
 
-footer img {
+#logo {
     width: 70px;
-    margin-bottom: 20px;
+    align-self: flex-end;
 }
 
+#redes img{
+    width: 40px;
+}
+
+#pie-pagina{
+    margin: 20px;
+}
+
+#pie-pagina a{
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: auto;
+}
+#pie-pagina p{
+    text-align: center;
+    margin: 20px;
+}
+
+#video-galeria{
+    background-color: #96BDC6;
+    text-align: left;
+    margin: 20px;
+}
+
+#video-galeria h1{
+    font-size: 55px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card{
+    background-color: #f4c7ab;
+}
+
+
+#formulario h1{
+    text-align: center;
+    font-size: 55px;
+    margin: 20px;
+}
+
+video{
+    max-width: 100%;
+
+}
 
