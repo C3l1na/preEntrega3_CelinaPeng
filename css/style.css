@@ -65,14 +65,16 @@ footer{
 /*----index----*/
 
 #intro h1{
-    font-size: 55px;
-    font-weight: bold;
+    color: white;
 }
 
 #intro {
-    background-image: url(101.jpg); /*no funciona*/
-    margin-top: 20px;
-    text-align: center;
+    display: flex;
+    background-image: url("../images/101.jpg"); 
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: left;
 }
 
 #segundo{
