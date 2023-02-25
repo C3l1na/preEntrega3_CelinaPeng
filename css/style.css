@@ -10,6 +10,7 @@ p,a,input,li,ul,textarea,label{
 
 img{
     max-width: 100%;
+    height: auto;
 }
 
 .btn{
