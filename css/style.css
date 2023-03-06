@@ -21,20 +21,26 @@ img{
 }
 
 body{
-    background: radial-gradient(circle, rgba(185,212,139,0.6783088235294117) 25%, rgba(115,212,183,1) 71%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(3deg, rgba(255,154,154,1) 0%, rgba(105,202,255,1) 56%, rgba(27,208,255,1) 83%, rgba(164,235,232,1) 100%);
 }
 /*----header----*/
 /*header{   
     background-color: #B9D48B;
 }
 */
+
+header img{
+    width: 30px;
+    height: 30px;
+}
+
 header li {
     margin: 0 10px;
 }
 /*----footer----*/
 footer{
     padding: 80px 0px;
-    background-color: #D3E4C5;
+    
 }
 
 #logo {
@@ -71,9 +77,9 @@ footer{
 
 #intro {
     display: flex;
-    background-image: url("../images/101.jpg"); 
+    background-image: url("../images/yusan.jpg"); 
     background-size: cover;
-    height: 100vh;
+    height: 500px;
     position: relative;
     text-align: left;
 }
@@ -82,7 +88,11 @@ footer{
     margin-top: 20px;
     padding: 20px;
     justify-content: center;
+}
 
+#primero img{
+    width: 300px;
+    height: 400px;
 }
 
 #segundo{
