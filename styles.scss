@@ -19,6 +19,18 @@
     }
 }
 
+@keyframes efecto-banner {
+    0%{
+        background-image: url(./images/yusan.jpg)
+    }
+    50%{
+        background-image: url(./images/arisan.jpg);
+    }
+    100%{
+        background-image: url(./images/camino-bambu.jpg);
+    }
+}
+
 h1,h2,h3,h3,h4,h5,h6{
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -95,6 +107,9 @@ footer{
     h1{
         color: white;
     }
+    animation-name: efecto-banner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #primero{
