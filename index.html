@@ -7,11 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taiwan-tuor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+    
 </head>
 
 <body>
+    
+
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg ">
@@ -53,21 +58,19 @@
 
     <section id="intro">
         <div class="container d-flex p-5 align-items-start">
-            <h1 class="text-white ">Taiwan, 台灣</h1> 
+            <h1 class="text-white" data-aos="fade-right">Taiwan, 台灣</h1> 
         </div>
     </section>
-
+    
     <section id="primero">
         <div class="container">
             <div class="row">
-                <div class="col-md-6  text-center">
-                    <p>Con tan solo 36.000 kilómetros cuadrados y algo más de 23 millones de habitantes, Taiwán es un pequeño país que, según la guía de viajes Lonely Planet, es uno de los mejores destinos para hacer turismo y poder conocer una historia ancestral. Bendecido con una amplia gama de zonas climáticas, el país cuenta también con unos notables y bellos recursos naturales, está especializado en producción de tecnología de última generación y dispone de una amplia oferta hotelera y gastronómica.
-
-                        Con más de 1.200 templos entre iglesias, mezquitas y sinagogas -que representan al taoísmo, el budismo, el protestantismo y el catolicismo- es un lugar de visible libertad religiosa. De hecho, en algunos lugares los templos taoístas y budistas están separados apenas por un patio central.</p>
+                <div class="col-md-6  text-center" data-aos="fade-right">
+                    <p>Con tan solo 36.000 kilómetros cuadrados y algo más de 23 millones de habitantes, Taiwán es un pequeño país que, según la guía de viajes Lonely Planet, es uno de los mejores destinos para hacer turismo y poder conocer una historia ancestral. Bendecido con una amplia gama de zonas climáticas, el país cuenta también con unos notables y bellos recursos naturales, está especializado en producción de tecnología de última generación y dispone de una amplia oferta hotelera y gastronómica.                     Con más de 1.200 templos entre iglesias, mezquitas y sinagogas -que representan al taoísmo, el budismo, el protestantismo y el catolicismo- es un lugar de visible libertad religiosa. De hecho, en algunos lugares los templos taoístas y budistas están separados apenas por un patio central.</p>
                     <p>La cultura de Taiwán es sutil y diversa. En cada esquina se puede encontrar historias únicas y sentimientos locales para disfrutarlos. Está cordialmente invitado a visitar Taiwán y descubrir el estilo de vida de su pueblo. La bella isla tiene muchos destinos fuera de lo común para ofrecer. ¡Por qué no saborear la cultura y naturaleza de Taiwán y conocer a sus hospitalarios habitantes!
-                        Amigable, sabia, y llena de maravillosas experiencias, Taiwán le espera con cordialidad.</p>
+                    Amigable, sabia, y llena de maravillosas experiencias, Taiwán le espera con cordialidad.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" >
                     <img src="./images/taiwan-map.jpg" alt="Mapa taiwan">
                 </div>
             </div>
@@ -78,14 +81,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3> Recorre una cultura diferente </h3>
-                    <p>Paisajes | Mercado nocturno | Monasterios | Manjares
+                    <h3 data-aos="zoom-in"> Recorre una cultura diferente </h3>
+                    <p data-aos="zoom-in">Paisajes | Mercado nocturno | Monasterios | Manjares
                     </p>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4" >
                 <div class="col-md-3">
-                    <div class="card" >
+                    <div class="card" data-aos="fade-right"  >
                         <img src="./images/paisaje.jpg" class="card-img-top" alt="Paisaje">
                         <div class="card-body">
                           <p class="card-text">Diversos paisajes turisticos ya sea montaña, lago, costas, miles de opciones.</p>
@@ -93,7 +96,7 @@
                       </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <img src="./images/night-market.jpg" class="card-img-top" alt="Mercado nocturno">
                         <div class="card-body">
                           <p class="card-text">Mercado nocturno en diferentes lugares para recorrer hasta las 24hs.</p>
@@ -101,7 +104,7 @@
                       </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" >
+                    <div class="card" data-aos="fade-left"  >
                         <img src="./images/monasterio.jpg" class="card-img-top" alt="Monasterio">
                         <div class="card-body">
                           <p class="card-text">Eventos religiosos para conocer la cultura oriental.</p>
@@ -109,7 +112,7 @@
                       </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left" >
                         <img src="./images/fideo.jpg" class="card-img-top" alt="Comida">
                         <div class="card-body">
                           <p class="card-text">Comidas, frutas y postres de Taiwan  </p>
@@ -192,5 +195,9 @@
     </footer>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
