@@ -10,6 +10,16 @@
     border-radius: 10px;
 }
 
+@keyframes efecto-imagen{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 h1,h2,h3,h3,h4,h5,h6{
     font-family: 'Noto Sans TC', sans-serif;
@@ -97,6 +107,8 @@ footer{
     img{
         width: 300px;
         height: 400px;
+        animation-name: efecto-imagen;
+        animation-iteration-count: infinite;
     }
 }
 
