@@ -128,6 +128,10 @@ footer #pie-pagina a {
   margin-top: 20px;
   background: radial-gradient(circle, rgb(222, 174, 238) 0%, rgb(148, 233, 232) 100%);
 }
+#segundo .card .img {
+  max-width: 100%;
+  height: auto;
+}
 
 #tercero {
   margin-bottom: 30px;
@@ -215,13 +219,26 @@ footer #pie-pagina a {
   }
 }
 #video-galeria {
-  text-align: left;
-  margin: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  gap: 20px;
 }
-#video-galeria h1 {
-  font-size: 55px;
-  margin: 20px;
-  text-align: center;
+#video-galeria a {
+  text-decoration: none;
+  color: black;
+}
+#video-galeria h2, #video-galeria h3 {
+  margin-bottom: 20px;
+}
+#video-galeria .card {
+  background-color: #94bbe9;
+  width: 80vh;
+  margin-bottom: 10px;
+  background: radial-gradient(circle, rgb(222, 174, 238) 0%, rgb(148, 233, 232) 100%);
+}
+#video-galeria .card .iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 #formulario h1 {
