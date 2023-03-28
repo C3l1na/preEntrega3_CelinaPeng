@@ -84,6 +84,9 @@ footer #pie-pagina a {
   background-repeat: no-repeat;
   background-size: cover;
   animation: cambiar-imagen-intro 20s infinite ease-in-out;
+  animation-name: efecto-banner;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 #intro .text-block {
   position: absolute;
