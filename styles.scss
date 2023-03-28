@@ -1,24 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC&family=Open+Sans&display=swap');
 
 // variables
+$tipografia-texto:'Open Sans', sans-serif;
+$tipografia-titulo: 'Noto Sans TC', sans-serif;
+$color-texto:white;
+$color-intro:black;
+$color-boton:#94bbe9;
+$padding:10px 25px;
+$borde-redondo: 10px;
+$gradient:linear-gradient(3deg, rgba(255,154,154,1) 0%, rgba(105,202,255,1) 56%, rgba(27,208,255,1) 83%, rgba(164,235,232,1) 100%);
 
 //mixins
 @mixin boton-personalizada{
-    background-color: #B9D48B;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
+    background-color:$color-boton;
+    color: $color-texto;
+    padding: $padding;
+    border-radius: $borde-redondo;
+    border-style:none;
 }
 
-@keyframes efecto-imagen{
+@mixin tamanio-imagen{
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin carta{
+    background-color: #94bbe9;
+    width: 80vh;
+}
+
+@mixin subtitulos{
+    margin-bottom: 30px;
+    gap: 20px;
+    a{
+        text-decoration: none;
+        color:black;
+    }
+}
+@mixin bloque-texto{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    p{
+      padding-left: 10px;
+    }       
+}
+@mixin tamanio-iframe{
+    max-width: 100%;
+    height: auto;
+}
+
+//animaciones
+
+@keyframes cambiar-imagen-intro{
     0%{
-        opacity: 0;
+        background-image: url(./images/yusan.jpg);
+    }
+    25%{
+        background-image: url(./images/paisaje.jpg);
+    }
+    50%{
+        background-image: url(./images/101.jpg);
+    }
+    75%{
+        background-image: url(./images/12.jpg);
     }
     100%{
-        opacity: 1;
+        background-image: url(./images/yusan.jpg);
     }
 }
 
+<<<<<<< HEAD
 @keyframes efecto-banner {
     0%{
         background-image: url(./images/yusan.jpg)
@@ -30,18 +88,20 @@
         background-image: url(./images/camino-bambu.jpg);
     }
 }
+=======
+//general
+>>>>>>> segundo
 
 h1,h2,h3,h3,h4,h5,h6{
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $tipografia-titulo;
 }
 
 p,a,input,li,ul,textarea,label{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $tipografia-texto;
 }
 
 img{
-    max-width: 100%;
-    height: auto;
+    @include tamanio-imagen();
 }
 
 .btn{
@@ -49,19 +109,16 @@ img{
 }
 
 body{
-    background: linear-gradient(3deg, rgba(255,154,154,1) 0%, rgba(105,202,255,1) 56%, rgba(27,208,255,1) 83%, rgba(164,235,232,1) 100%);
+    background: $gradient;
 }
 
 //header
 
-
 header{
-
     img{
         width: 30px;
         height: 30px;
     }
-
     li{
         margin: 0 10px;
     }
@@ -70,28 +127,30 @@ header{
 //footer
 
 footer{
-    padding: 80px 0px;
+    margin-bottom: 0px;
+    margin-top: 40px;
     #logo{
         width: 70px;
         align-self: flex-end;
     }
-    #redes img{
-        width: 40px;
+    #redes{
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 40px;
+        }
     }
-    
+    .mapa{
+        width: 350px;
+        height: 200px;          
+    }
     #pie-pagina{
         margin: 20px;
         a{
             text-decoration: none;
             color: black;
             align-items: center;
-            justify-content: space-between;
-            margin: 20px;
-            padding: auto;
-        }
-        p{
-            text-align: center;
-            margin: 20px;
         }
     }
 }
@@ -99,13 +158,15 @@ footer{
 //index
 
 #intro {
-    background-image: url(./images/yusan.jpg);
-    height: 50vh;
-    background-position: center;
+    position: relative;
+    background-image: url(./images/101.jpg);
+    height: 80vh;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    h1{
-        color: white;
+    animation: cambiar-imagen-intro 20s infinite ease-in-out;
+    .text-block{
+        @include bloque-texto();
     }
     animation-name: efecto-banner;
     animation-duration: 5s;
@@ -118,22 +179,29 @@ footer{
     padding: 20px;
     justify-content: center;
     img{
-        width: 300px;
-        height: 400px;
-        animation-name: efecto-imagen;
-        animation-iteration-count: infinite;
+        width: 500px;
+        height: 500px;
     }
 }
 
 #segundo{
-    padding: 80px 0px;
     gap:20px;
-    h3{
+    position: relative;
+    @include subtitulos();
+    h2,h3{
         margin-bottom: 20px;
+    }
+    .card{
+        .img{
+            @include tamanio-imagen();
+        }
+        margin-top: 20px;
+        background: radial-gradient(circle, rgba(222,174,238,1) 0%, rgba(148,233,232,1) 100%);
     }
 }
 
 #tercero{
+    @include subtitulos();
     img{
         box-shadow: 10px 10px;
     }
@@ -151,8 +219,8 @@ footer{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-auto-rows: 300px;
-        padding: 20px;
-        margin: auto;
+        padding: 10px;
+        margin: 30px;
         grid-gap: 10px;
         .galeria-item{
             position: relative;
@@ -160,20 +228,19 @@ footer{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-radius: 20px;
             }
             .galeria-titulo{
-                position: absolute;
-                top: 0;
-                color: white;
+                position: absolute; 
+                bottom: 0; 
+                background: rgb(0, 0, 0); 
+                background: rgba(0, 0, 0, 0.3); 
+                color: #f1f1f1; 
                 width: 100%;
-                margin: 0;
-                padding: 10px;
+                padding: 20px; 
             }
         }
     }
 }
-
 
 /*mobile*/
 @media (min-width:400px){
@@ -188,12 +255,10 @@ footer{
                 grid-column-start: span 1;
             }
         
-            .galeria-item:nth-child(5){
-                grid-row-start: span 2;
-            }
         } 
     }
 }
+
 /*tablet*/
 @media (min-width:770px){
     .galeria{
@@ -202,13 +267,8 @@ footer{
             .galeria-item:nth-child(2){
                 grid-row-start: span 2;
             }
-        
             .galeria-item:nth-child(4){
                 grid-column-start: span 2;
-            }
-        
-            .galeria-item:nth-child(5){
-                grid-row-start: span 3;
             }
         } 
     }
@@ -234,15 +294,6 @@ footer{
             .galeria-item:nth-child(4){
                 grid-column-start: span 2;  
             }
-        
-            .galeria-item:nth-child(5){
-                grid-row-start: span 2;
-                
-            }
-            .galeria-item:nth-child(8){
-                grid-row-start: span 2;
-                
-            }
         } 
     }
 }
@@ -250,19 +301,20 @@ footer{
 //tuor de youtubers
 
 #video-galeria{
-    text-align: left;
-    margin: 20px;
-    h1{
-        font-size: 55px;
-        margin: 20px;
-        text-align: center;
+    position: relative;
+    @include subtitulos();
+    h2,h3{
+        margin-bottom: 20px;
     }
-}
-
-
-.card{
-    background-color: #94bbe9;
-    width: 18rem;
+    .card{
+        @include carta();
+        margin-bottom: 10px;
+        background: radial-gradient(circle, rgba(222,174,238,1) 0%, rgba(148,233,232,1) 100%);
+        .iframe{
+            @include tamanio-iframe();
+        }
+    }
+    
 }
 
 //contacto
